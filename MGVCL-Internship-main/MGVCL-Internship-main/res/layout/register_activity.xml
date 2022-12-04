@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RG_Consumer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:hint="Consumer ID"
+            android:isScrollContainer="true"
+            android:theme="@style/TEXTINPUTLAYOUT"
+            app:boxBackgroundColor="#0000"
+            app:boxBackgroundMode="outline"
+            app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RG_Consumer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RG_Meter_Nu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RG_Consumer"
+            android:layout_margin="9dp"
+            android:hint="Meter Number"
+            android:isScrollContainer="true"
+            android:theme="@style/TEXTINPUTLAYOUT"
+            app:boxBackgroundColor="#0000"
+            app:boxBackgroundMode="outline"
+            app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RG_Meter_Nu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RG_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RG_Meter_Nu"
+            android:layout_margin="9dp"
+            android:hint="Name"
+            android:isScrollContainer="true"
+            android:theme="@style/TEXTINPUTLAYOUT"
+            app:boxBackgroundColor="#0000"
+            app:boxBackgroundMode="outline"
+            app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RG_Name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RG_Phone_NU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RG_Name"
+            android:layout_margin="9dp"
+            android:hint="Phone Number"
+            android:isScrollContainer="true"
+            android:theme="@style/TEXTINPUTLAYOUT"
+            app:boxBackgroundColor="#0000"
+            app:boxBackgroundMode="outline"
+            app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RG_Phone_NU1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RG_Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RG_Phone_NU"
+            android:layout_margin="9dp"
+            android:hint="Address"
+            android:isScrollContainer="true"
+            android:theme="@style/TEXTINPUTLAYOUT"
+            app:boxBackgroundColor="#0000"
+            app:boxBackgroundMode="outline"
+            app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RG_Add1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RG_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RG_Add"
+            android:layout_margin="9dp"
+            android:hint="E-Mail"
+            android:isScrollContainer="true"
+            android:theme="@style/TEXTINPUTLAYOUT"
+            app:boxBackgroundColor="#0000"
+            app:boxBackgroundMode="outline"
+            app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RG_Email1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_email"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RG_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RG_Email"
+            android:layout_margin="9dp"
+            android:hint="Password"
+            android:isScrollContainer="true"
+            android:theme="@style/TEXTINPUTLAYOUT"
+            app:boxBackgroundColor="#0000"
+            app:boxBackgroundMode="outline"
+            app:hintTextAppearance="@style/TXT_VIEW_EDIT"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RG_Password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/BTN_RG_SUB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RG_Password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+</ScrollView>

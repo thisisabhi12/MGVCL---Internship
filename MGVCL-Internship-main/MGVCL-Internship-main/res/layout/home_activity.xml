@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow3"
+    tools:context=".Home_Activity">
+
+    <TextView
+        android:id="@+id/TV_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Complain Here"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        android:theme="@style/Login_TV" />
+
+
+    <TextView
+        android:id="@+id/TV_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_1"
+        android:layout_alignLeft="@id/TV_4"
+        android:layout_marginTop="20dp"
+        android:text="Consumer ID : "
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:theme="@style/Login_TV" />
+
+    <TextView
+        android:id="@+id/TV_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/TV_2"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/TV_2"
+        android:text="1"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:theme="@style/Login_TV" />
+
+    <TextView
+        android:id="@+id/TV_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Name : "
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:theme="@style/Login_TV" />
+
+    <TextView
+        android:id="@+id/TV_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_2"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/TV_4"
+        android:text="ABC"
+        android:textSize="15sp"
+        android:theme="@style/Login_TV" />
+
+    <TextView
+        android:id="@+id/TV_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Complain"
+        android:textSize="18sp"
+        android:theme="@style/Login_TV" />
+
+    <Spinner
+        android:id="@+id/HM_SP_Complain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_6"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/HM_Des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HM_SP_Complain"
+        android:layout_margin="9dp"
+        android:hint="Description(optional)"
+        android:isScrollContainer="true"
+        android:theme="@style/TEXTINPUTLAYOUT"
+        app:boxBackgroundColor="#0000"
+        app:boxBackgroundMode="outline"
+        app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/HM_Des1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:maxLines="5"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/HM_BTN_SUB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HM_Des"
+        android:layout_centerHorizontal="true"
+        android:text="SUBMIT"
+        android:theme="@style/L_BTN" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#0000"
+        android:id="@+id/Raj"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/HM_BTN_SUB"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

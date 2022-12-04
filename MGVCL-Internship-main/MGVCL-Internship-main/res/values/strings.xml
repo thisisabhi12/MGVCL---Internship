@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Consumer</string>
+    <string-array name="Module">
+        <item>Customer</item>
+        <item>Admin</item>
+    </string-array>
+    <string name="_2018_2020_shift_com">2020-2022 MGVCL.com</string>
+    <string name="continue_with">continue with</string>
+</resources>
